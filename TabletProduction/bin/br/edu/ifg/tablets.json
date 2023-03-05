@@ -1,0 +1,38 @@
+{
+    "tablets": {
+        "tablet1": {
+            "placaMae": {
+                "nomePeca": "Placa Mãe",
+                "marca": "Arduino",
+                "modelo": "A55"
+            },
+            "tela": {
+                "nomePeca": "Tela",
+                "marca": "Toshiba",
+                "modelo": "45P"
+            },
+            "bateria": {
+                "nomePeca": "Bateria",
+                "marca": "Litio",
+                "modelo": "456"
+            }
+        },
+        "tablet2": {
+            "placaMae": {
+                "nomePeca": "Placa Mãe",
+                "marca": "Arduino",
+                "modelo": "A55"
+            },
+            "tela": {
+                "nomePeca": "Tela",
+                "marca": "Toshiba",
+                "modelo": "45P"
+            },
+            "bateria": {
+                "nomePeca": "Bateria",
+                "marca": "Litio",
+                "modelo": "456"
+            }
+        }
+    }
+}
