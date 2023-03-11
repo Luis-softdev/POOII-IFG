@@ -9,67 +9,67 @@ public class ControleDeQualidade {
         Random aleatorio = new Random();
         int num = 0;
 
-        System.out.println("Preparando as pecas para teste");
+        System.out.println("\nPreparando as pecas para teste");
         TimeUnit.SECONDS.sleep(2);
 
-        System.out.println("Iniciando testes:");
+        System.out.println("\nIniciando testes:");
         TimeUnit.SECONDS.sleep(1);
 
-        System.out.println("Testando a Placa Mae:");
+        System.out.println("\nTestando a Placa Mae:");
         TimeUnit.SECONDS.sleep(2);
         
-        System.out.println("[#####-----------------------] 25%");
+        System.out.println("\n[#####-----------------------] 25%");
 
         num = aleatorio.nextInt(20);
 
         while(num == 4 || num == 18) {
-            System.out.println("Placa Mae com defeito, selecinando outra e testando");
+            System.out.println("\nPlaca Mae com defeito, selecinando outra e testando");
             TimeUnit.SECONDS.sleep(2);
-            System.out.println("[#####-----------------------] 25%");
+            System.out.println("\n[#####-----------------------] 25%");
             num = aleatorio.nextInt(20);
         }
 
-        System.out.println("Testando a Memoria RAM:");
+        System.out.println("\nTestando a Memoria RAM:");
         TimeUnit.SECONDS.sleep(2);
         
-        System.out.println("[###############-------------] 50%");
+        System.out.println("\n[###############-------------] 50%");
 
         num = aleatorio.nextInt(20);
 
         while(num == 4 || num == 18) {
-            System.out.println("Memoria RAM com defeito, selecinando outra e testando");
+            System.out.println("\nMemoria RAM com defeito, selecinando outra e testando");
             TimeUnit.SECONDS.sleep(2);
-            System.out.println("[###############-------------] 50%");
+            System.out.println("\n[###############-------------] 50%");
             num = aleatorio.nextInt(20);
         }
 
-        System.out.println("Testando a Tela:");
+        System.out.println("\nTestando a Tela:");
         TimeUnit.SECONDS.sleep(2);
         
-        System.out.println("[######################------] 75%");
+        System.out.println("\n[######################------] 75%");
 
         num = aleatorio.nextInt(20);
 
         while(num == 4 || num == 18) {
-            System.out.println("Tela com defeito, selecinando outra e testando");
+            System.out.println("\nTela com defeito, selecinando outra e testando");
             TimeUnit.SECONDS.sleep(2);
-            System.out.println("[######################------] 75%");
+            System.out.println("\n[######################------] 75%");
             num = aleatorio.nextInt(20);
         }
 
-        System.out.println("Testando a Bateria:");
+        System.out.println("\nTestando a Bateria:");
         TimeUnit.SECONDS.sleep(2);
 
         num = aleatorio.nextInt(20);
 
         while(num == 4 || num == 18) {
-            System.out.println("Bateria com defeito, selecinando outra e testando");
+            System.out.println("\nBateria com defeito, selecinando outra e testando");
             TimeUnit.SECONDS.sleep(2);
-            System.out.println("[######################------] 75%");
+            System.out.println("\n[######################------] 75%");
             num = aleatorio.nextInt(20);
         }
         
-        System.out.println("[############################] 100%");
+        System.out.println("\n[############################] 100%");
         
     }
 

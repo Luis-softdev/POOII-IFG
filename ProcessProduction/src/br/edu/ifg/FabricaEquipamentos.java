@@ -31,10 +31,10 @@ public class FabricaEquipamentos implements AbstractFactory {
         int numMarca = aleatorio.nextInt(Marcas.marcas().size());
         int numModelo = aleatorio.nextInt(Modelo.modeloProduto().size());
 
-        if(this.produtoASerProduzido == "Taablet") {
+        if(this.produtoASerProduzido == "tablet") {
             this.tablet = new Tablet("Tablet",Marcas.marcas().get(numMarca), Modelo.modeloProduto().get(numModelo));
         } else {
-            this.smartphone = new Smartphone("SmartPhone",Marcas.marcas().get(numMarca), Modelo.modeloProduto().get(numModelo));
+            this.smartphone = new Smartphone("Smartphone",Marcas.marcas().get(numMarca), Modelo.modeloProduto().get(numModelo));
         }
         ControleDeQualidade.testarProduto();
     }
@@ -47,7 +47,7 @@ public class FabricaEquipamentos implements AbstractFactory {
 
         Random aleatorio = new Random();
 
-        System.out.println("Selecionando marcas das pecas");
+        System.out.println("\nSelecionando marcas das pecas");
         TimeUnit.SECONDS.sleep(5);
 
         int num = aleatorio.nextInt(quantNumeros);
@@ -66,7 +66,7 @@ public class FabricaEquipamentos implements AbstractFactory {
         bateria = marcas.get(num);
         this.marca.put("Bateria", bateria);
 
-        System.out.println("Marcas selecionadas");
+        System.out.println("\nMarcas selecionadas");
     }
 
     @Override
@@ -77,7 +77,7 @@ public class FabricaEquipamentos implements AbstractFactory {
 
         Random aleatorio = new Random();
 
-        System.out.println("Selecionando modelo das pecas");
+        System.out.println("\nSelecionando modelo das pecas");
         TimeUnit.SECONDS.sleep(5);
 
         int num = aleatorio.nextInt(quantNumeros);
@@ -96,16 +96,18 @@ public class FabricaEquipamentos implements AbstractFactory {
         bateria = modelo.get(num);
         this.modelo.put("Bateria", bateria);
 
-        System.out.println("Modelos selecionados");
+        System.out.println("\nModelos selecionados");
         
     }
 
     @Override
     public void definirNomePeca() {
-        this.nomePeca.add("Placa Mae");
-        this.nomePeca.add("Memoria RAM");
-        this.nomePeca.add("Tela");
-        this.nomePeca.add("Bateria");
+        ArrayList<String> nomePeca = new ArrayList<>();
+        nomePeca.add("Placa Mae");
+        nomePeca.add("Memoria RAM");
+        nomePeca.add("Tela");
+        nomePeca.add("Bateria");
+        this.setNomePeca(nomePeca);
         
     }
 

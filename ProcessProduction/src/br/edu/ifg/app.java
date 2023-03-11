@@ -4,22 +4,21 @@ import java.util.Scanner;
 public class App {
 
     private String produtoASerProduzido;
-    private String quantProdutosProducao;
+    private int quantProdutosProducao;
 
     public void definirProdutoParaProducao(){
-        System.out.println("Digite qual produto será produzido: ");
+        System.out.println("\nDigite qual produto será produzido: ");
         Scanner scanner = new Scanner(System.in);
         String resposta = scanner.nextLine();
-        this.produtoASerProduzido = resposta;
-        scanner.close();
+        resposta = resposta.toLowerCase();
+        this.setProdutoASerProduzido(resposta);
     }
 
     public void definirQuantidadeDeProdutos(){
-        System.out.println("Digite a quantidade de produtos que será produzido: ");
         Scanner scanner = new Scanner(System.in);
-        String resposta = scanner.nextLine();
-        this.quantProdutosProducao = resposta;
-        scanner.close();
+        System.out.println("\nDigite a quantidade de produtos que será produzido: ");
+        int resposta = scanner.nextInt();
+        this.setQuantProdutosProducao(resposta);
     }
 
     public String getProdutoASerProduzido() {
@@ -30,11 +29,11 @@ public class App {
         this.produtoASerProduzido = produtoASerProduzido;
     }
 
-    public String getQuantProdutosProducao() {
+    public int getQuantProdutosProducao() {
         return quantProdutosProducao;
     }
 
-    public void setQuantProdutosProducao(String quantProdutosProducao) {
+    public void setQuantProdutosProducao(int quantProdutosProducao) {
         this.quantProdutosProducao = quantProdutosProducao;
     }
 }
