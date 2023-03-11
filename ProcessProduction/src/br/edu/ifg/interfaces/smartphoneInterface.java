@@ -1,5 +1,5 @@
 package br.edu.ifg.interfaces;
 
-public interface smartphoneInterface {
+public interface SmartphoneInterface {
     public void definirPreco();
 }

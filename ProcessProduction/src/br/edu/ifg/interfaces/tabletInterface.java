@@ -1,5 +1,5 @@
 package br.edu.ifg.interfaces;
 
-public interface tabletInterface {
+public interface TabletInterface {
     public void definirPreco();
 }

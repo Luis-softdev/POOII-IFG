@@ -1,9 +1,9 @@
 package br.edu.ifg;
 import java.util.Scanner;
 
-import br.edu.ifg.interfaces.smartphoneInterface;
+import br.edu.ifg.interfaces.SmartphoneInterface;
 
-public class Smartphone implements smartphoneInterface {
+public class Smartphone implements SmartphoneInterface {
     private Double preco;
     private String marca;
     private String modelo;
