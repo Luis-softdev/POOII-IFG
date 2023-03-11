@@ -1,9 +1,9 @@
 package br.edu.ifg;
 import java.util.Scanner;
 
-import br.edu.ifg.interfaces.tabletInterface;
+import br.edu.ifg.interfaces.TabletInterface;
 
-public class Tablet implements tabletInterface{
+public class Tablet implements TabletInterface{
     private Double preco;
     private String marca;
     private String modelo;
