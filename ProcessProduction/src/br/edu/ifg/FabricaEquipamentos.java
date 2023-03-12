@@ -30,8 +30,8 @@ public class FabricaEquipamentos implements AbstractFactory {
         Random aleatorio = new Random();
         int numMarca = aleatorio.nextInt(Marcas.marcas().size());
         int numModelo = aleatorio.nextInt(Modelo.modeloProduto().size());
-
-        if(this.produtoASerProduzido == "tablet") {
+        
+        if(this.getProdutoASerProduzido().equals("tablet")) {
             this.tablet = new Tablet("Tablet",Marcas.marcas().get(numMarca), Modelo.modeloProduto().get(numModelo));
         } else {
             this.smartphone = new Smartphone("Smartphone",Marcas.marcas().get(numMarca), Modelo.modeloProduto().get(numModelo));
